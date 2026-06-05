@@ -1,14 +1,16 @@
 package com.airtribe.learntrack.entity;
 
+import com.airtribe.learntrack.enums.EnrollmentStatus;
+
 public class Enrollment {
     private int id;
     private int studentId;
     private int courseId;
     private String enrollmentDate;
-    private Status status;
+    private EnrollmentStatus status;
 
     public Enrollment() {
-        this.status = Status.ACTIVE;
+        this.status = EnrollmentStatus.ACTIVE;
     }
 
     public Enrollment(int id, int studentId, int courseId, String enrollmentDate, String status) {
@@ -54,7 +56,7 @@ public class Enrollment {
         this.enrollmentDate = enrollmentDate;
     }
 
-    public Status getStatus() {
+    public EnrollmentStatus getStatus() {
         return status;
     }
 
@@ -63,7 +65,7 @@ public class Enrollment {
             throw new IllegalArgumentException("Status cannot be empty");
         }
         try {
-            this.status = Status.valueOf(status.toUpperCase());
+            this.status = EnrollmentStatus.valueOf(status.toUpperCase());
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException("Invalid status: " + status + ". Valid values are: ACTIVE, COMPLETED, CANCELLED");
         }
