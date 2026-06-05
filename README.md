@@ -17,7 +17,7 @@ You can run this project either from your terminal or using an IDE.
 1. Clone the GitHub repository to your local machine:
    git clone https://github.com/mnhsh/learn-track.git
 2. Open the cloned folder as a project in your IDE.
-3. In the project explorer, navigate to src/com/airtribe/learntrack/Main.java.
+3. In the project explorer, navigate to src/com/airtribe/learntrack/ui/Main.java.
 4. Click the "Run" button (usually a green play icon) to start the application.
 ## Class Diagram
    Here is a simple overview of how the classes are related in this project:
