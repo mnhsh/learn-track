@@ -9,10 +9,11 @@ You can run this project either from your terminal or using an IDE.
 ### Option 1: Using a Terminal
 1. Open your terminal and navigate to the project's root folder.
 2. Compile the Java files by running:
-   ```bash
+   ```
    javac -d out/ src/com/airtribe/learntrack/**/*.java src/com/airtribe/learntrack/*.java
 3. Run the application by running:
-   java -cp out/ com.airtribe.learntrack.Main
+   ```
+   java -cp out/ com.airtribe.learntrack.ui.Main
 ### Option 2: Using an IDE (IntelliJ IDEA, Eclipse, VS Code)
 1. Clone the GitHub repository to your local machine:
    git clone https://github.com/mnhsh/learn-track.git
